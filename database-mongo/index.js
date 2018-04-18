@@ -22,6 +22,7 @@ var doctorsSchema = mongoose.Schema({
 
 var Doctor = mongoose.model('Doctor', doctorsSchema);
 
+
 //comment
 
 var userSchema = mongoose.Schema({
@@ -30,7 +31,6 @@ var userSchema = mongoose.Schema({
 });
 
 var User = mongoose.model('User',userSchema);
-
 
 var selectAll = function(callback) {
   Doctor.find({}, function(err, doctor) {
@@ -45,3 +45,6 @@ var selectAll = function(callback) {
 module.exports.selectAll = selectAll;
 module.exports.Doctor=Doctor;
 module.exports.User = User;
+
+
+module.exports.Doctor=Doctor;
