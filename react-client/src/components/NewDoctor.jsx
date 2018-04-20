@@ -14,7 +14,7 @@ class NewDoctor extends React.Component {
 
   componentDidMount(name,tel,address,email,rate,specialization) {
     if(name && tel && address && email && rate && specialization){
-    $.ajax({
+    $.ajax({ 
       type: 'POST',
       url: '/doctors',
       data :{name :name,specialization : specialization,email:email,address:address,rate:rate,tel:tel },

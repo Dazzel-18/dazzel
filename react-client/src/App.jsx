@@ -59,7 +59,7 @@ Login(){
     type :'GET',
     url : '/doctors',
     success: (data) => {
-//I'm just trying ,,We need a new table for Admin  'userName','password'
+//I'm just trying ,,We need a new table for Admin  'userName','password' 
       for (var i = 0; i < data.length; i++) {
        if(this.state.userName===data[i].name && this.state.password===data[i].address){
     this.setState({
