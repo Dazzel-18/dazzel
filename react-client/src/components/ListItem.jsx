@@ -59,7 +59,7 @@ class ListItem extends React.Component{
 	render(){
 
 		return (
-			<div>
+			<div id ='AddDoctor'>
 			Name : <input value={this.props.name} onChange={this.onChangeName}></input>
 			<br/><br/>
 			Specialization : <input value={this.props.specialization} onChange={this.onChangeSpe}></input>

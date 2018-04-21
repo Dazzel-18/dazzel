@@ -83,12 +83,12 @@ render(){
        return <NewDoctor/>;
      }
   return(
- <div>
+ <div id ='Admin'>
       User Name :<br/>
-  <input type="text" name="username" id="username" onChange={this.onChangeUserName}/>
+  <input  type="text" name="username"  placeholder="UserName" id="username" onChange={this.onChangeUserName}/>
   <br/><br/>
   Password :<br/>
-  <input type="password" name="password" id="password" onChange={this.onChangePassword}/>
+  <input type="password" name="password" id="password" placeholder="Password" onChange={this.onChangePassword}/>
   <br/>
   <br/>
   <input type="button" value="Login" id="submit" onClick={this.Login}/>

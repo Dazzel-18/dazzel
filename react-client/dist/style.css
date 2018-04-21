@@ -1,0 +1,14 @@
+body{
+	margin: 50px;
+}
+
+#Admin{
+	text-align: center;
+	background-color: gray;
+	margin: 20px;
+}
+
+#AddDoctor{
+	text-align: center;
+	margin: 20px;
+}
