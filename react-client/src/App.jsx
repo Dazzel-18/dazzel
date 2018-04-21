@@ -8,9 +8,7 @@ import NewDoctor from './components/NewDoctor.jsx'
 
 import ListItem from './components/ListItem.jsx'
 
-
-
-
+import {Button} from 'react-bootstrap'
 const AdminLogIn = () => (
   <Router>
     <div>
@@ -34,6 +32,29 @@ const AdminLogIn = () => (
 const Home = () => (
   <div>
     <h2>Home</h2>
+    <div>
+    <style type="text/css">{`
+    .btn-kind {
+        background-color: green;
+        color: white;
+        padding: 20px 24px; 
+        hover: background-color: #3e8e41;
+    }
+    .btn-kind:hover {
+      background-color:	#ccffe6;
+  }
+ 
+    `}</style>
+    </div>
+    <Button bsStyle="kind">Eye Doctors</Button>
+    <Button bsStyle="kind">Heart Doctors</Button>
+    <Button bsStyle="kind">Nervous System Doctors</Button>
+    <Button bsStyle="kind">skin Doctors</Button>
+    <Button bsStyle="kind">dentist Doctors</Button>
+    <Button bsStyle="kind">Skeleton Doctors</Button>
+    <Button bsStyle="kind">Children Doctors</Button>
+
+
   </div>
 );
 
