@@ -125,8 +125,8 @@ app.post('/admin/doctorform',function(req,res){
 })
 
 app.post('/admin/signup',passport.authenticate('local.signup',{
-  successRedirect:'/admin',
-  failureRedirct:'signup',
+  successRedirect:'/admin/login',
+  failureRedirct:'error',
   failureFlash:true 
 }));
 
@@ -136,7 +136,7 @@ app.get('/admin/login',function(req,res){
 
 app.post('/admin/login',passport.authenticate('local.login',{
   successRedirect:'/admin/doctorform',
-  failureRedirct:'login',
+  failureRedirct:'admin/login',
   failureFlash:true 
 }));
 

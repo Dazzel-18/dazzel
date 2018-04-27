@@ -22,8 +22,7 @@ class Map extends React.Component {
 * Ajax request fetch the nearest three Doctors from  the data base  
 */
  showNearest(){
-   console.log(this.props.lat,this.props.lng)
-    
+      
       var that=this
       $.ajax({
         url:'/docNearst/'+that.props.specialty,
@@ -58,8 +57,8 @@ class Map extends React.Component {
 */
   onMapClick(e){
     this.setState({
-      markerPosition: {lat:e.lat,lng:e.lng},
-      isMarkerShown:true
+     markerPosition: {lat:e.lat,lng:e.lng},
+     isMarkerShown:true
 
     })
   }
